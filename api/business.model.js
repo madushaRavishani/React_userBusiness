@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-let businessSchema = new Schema({
+let Business = new Schema({
     person_name : { type : String},
     business_name : { type : String},
     business_nic_number : { type : String}
 },
-    {collection : 'businesses'}
+    {collection : 'business'}
 );
 
-module.exports = mongoose.model( 'Business', businessSchema);
+module.exports = mongoose.model( 'Business', Business);
